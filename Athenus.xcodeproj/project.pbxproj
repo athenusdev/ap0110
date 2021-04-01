@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7995D372607BEC000FB07E7 /* Ap0110-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A7995D362607BEC000FB07E7 /* Ap0110-1024.png */; };
+		A7995D392607C19C00FB07E7 /* fuckyou.png in Resources */ = {isa = PBXBuildFile; fileRef = A7995D382607C19C00FB07E7 /* fuckyou.png */; };
+		A7F2C8192606777600424F26 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F2C8182606777600424F26 /* IOKit.framework */; };
+		A7F92FED260925B9006BBDD7 /* Cydia-10.tar in Resources */ = {isa = PBXBuildFile; fileRef = A7F92FD2260925B9006BBDD7 /* Cydia-10.tar */; };
+		A7F92FEE260925B9006BBDD7 /* launchctl in Resources */ = {isa = PBXBuildFile; fileRef = A7F92FD3260925B9006BBDD7 /* launchctl */; };
+		A7F92FEF260925B9006BBDD7 /* tar in Resources */ = {isa = PBXBuildFile; fileRef = A7F92FD4260925B9006BBDD7 /* tar */; };
+		A7F92FF0260925B9006BBDD7 /* libimg4tool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F92FD6260925B9006BBDD7 /* libimg4tool.a */; };
+		A7F92FF1260925B9006BBDD7 /* libplist++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F92FD7260925B9006BBDD7 /* libplist++.a */; };
+		A7F92FF2260925B9006BBDD7 /* libplist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F92FD8260925B9006BBDD7 /* libplist.a */; };
+		A7F92FF3260925B9006BBDD7 /* offsets.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F92FDA260925B9006BBDD7 /* offsets.m */; };
+		A7F92FF4260925B9006BBDD7 /* offsets.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7F92FDB260925B9006BBDD7 /* offsets.mm */; };
+		A7F92FF5260925B9006BBDD7 /* patchfinder64.c in Sources */ = {isa = PBXBuildFile; fileRef = A7F92FDC260925B9006BBDD7 /* patchfinder64.c */; };
+		A7F92FF6260925B9006BBDD7 /* sock_port_exploit.c in Sources */ = {isa = PBXBuildFile; fileRef = A7F92FE0260925B9006BBDD7 /* sock_port_exploit.c */; };
+		A7F92FF7260925B9006BBDD7 /* kernel_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = A7F92FE2260925B9006BBDD7 /* kernel_memory.c */; };
+		A7F92FF8260925B9006BBDD7 /* kutil.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F92FE5260925B9006BBDD7 /* kutil.m */; };
+		A7F92FF9260925B9006BBDD7 /* exploit_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = A7F92FE7260925B9006BBDD7 /* exploit_utilities.c */; };
+		A7F92FFA260925B9006BBDD7 /* iosurface.c in Sources */ = {isa = PBXBuildFile; fileRef = A7F92FE9260925B9006BBDD7 /* iosurface.c */; };
+		A7F92FFB260925B9006BBDD7 /* jailbreak.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7F92FEC260925B9006BBDD7 /* jailbreak.mm */; };
+		A7F93032260926BD006BBDD7 /* exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7F9302A260926BD006BBDD7 /* exception.cpp */; };
+		A7F93033260926BD006BBDD7 /* insn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7F9302C260926BD006BBDD7 /* insn.cpp */; };
+		A7F93034260926BD006BBDD7 /* liboffsetfinder64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7F9302E260926BD006BBDD7 /* liboffsetfinder64.cpp */; };
+		A7F93035260926BD006BBDD7 /* patch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7F93030260926BD006BBDD7 /* patch.cpp */; };
+		A7F9304226092AC6006BBDD7 /* img3dec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7F9303A26092AC6006BBDD7 /* img3dec.cpp */; };
+		A7F9304326092AC6006BBDD7 /* lzssdec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7F9303C26092AC6006BBDD7 /* lzssdec.cpp */; };
+		A7F9304426092AC6006BBDD7 /* offsetfinder32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7F9303E26092AC6006BBDD7 /* offsetfinder32.cpp */; };
+		A7F9304526092AC6006BBDD7 /* patchfinder32.c in Sources */ = {isa = PBXBuildFile; fileRef = A7F9304026092AC6006BBDD7 /* patchfinder32.c */; };
+		A7FD252725F099D900287BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FD252525F099D900287BBE /* Assets.xcassets */; };
+		A7FD252825F099D900287BBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FD252625F099D900287BBE /* ViewController.m */; };
+		A7FD252C25F099E000287BBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FD252925F099E000287BBE /* AppDelegate.m */; };
+		A7FD252D25F099E000287BBE /* untethered.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FD252A25F099E000287BBE /* untethered.m */; };
+		A7FD253325F09A1F00287BBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FD253225F09A1F00287BBE /* main.m */; };
+		A7FD254E25F09B9200287BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FD254A25F09B9200287BBE /* LaunchScreen.storyboard */; };
+		A7FD254F25F09B9200287BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FD254C25F09B9200287BBE /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75DC306E24B4CB01009152F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DC304C24B4CB00009152F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DC305324B4CB00009152F2;
+			remoteInfo = genesys;
+		};
+		75DC307924B4CB01009152F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DC304C24B4CB00009152F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DC305324B4CB00009152F2;
+			remoteInfo = genesys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75DC305424B4CB00009152F2 /* ap0110.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ap0110.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DC306D24B4CB01009152F2 /* Athenus.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Athenus.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DC307824B4CB01009152F2 /* Athenus.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Athenus.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7995D362607BEC000FB07E7 /* Ap0110-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ap0110-1024.png"; path = "Athenus/Ap0110-1024.png"; sourceTree = SOURCE_ROOT; };
+		A7995D382607C19C00FB07E7 /* fuckyou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fuckyou.png; path = Athenus/fuckyou.png; sourceTree = SOURCE_ROOT; };
+		A7995D7E2608104D00FB07E7 /* libimg4tool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libimg4tool.a; sourceTree = "<group>"; };
+		A7995D812608104D00FB07E7 /* libplist++.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libplist++.a"; sourceTree = "<group>"; };
+		A7995D822608104D00FB07E7 /* libplist.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libplist.a; sourceTree = "<group>"; };
+		A7F2C8182606777600424F26 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
+		A7F92FCF260925B9006BBDD7 /* sugondesenuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sugondesenuts.h; path = Athenus/sugondesenuts.h; sourceTree = SOURCE_ROOT; };
+		A7F92FD0260925B9006BBDD7 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = Athenus/config.h; sourceTree = SOURCE_ROOT; };
+		A7F92FD2260925B9006BBDD7 /* Cydia-10.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "Cydia-10.tar"; sourceTree = "<group>"; };
+		A7F92FD3260925B9006BBDD7 /* launchctl */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = launchctl; sourceTree = "<group>"; };
+		A7F92FD4260925B9006BBDD7 /* tar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tar; sourceTree = "<group>"; };
+		A7F92FD6260925B9006BBDD7 /* libimg4tool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libimg4tool.a; sourceTree = "<group>"; };
+		A7F92FD7260925B9006BBDD7 /* libplist++.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libplist++.a"; sourceTree = "<group>"; };
+		A7F92FD8260925B9006BBDD7 /* libplist.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libplist.a; sourceTree = "<group>"; };
+		A7F92FD9260925B9006BBDD7 /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = offsets.h; path = Athenus/offsets.h; sourceTree = SOURCE_ROOT; };
+		A7F92FDA260925B9006BBDD7 /* offsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = offsets.m; path = Athenus/offsets.m; sourceTree = SOURCE_ROOT; };
+		A7F92FDB260925B9006BBDD7 /* offsets.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = offsets.mm; path = Athenus/offsets.mm; sourceTree = SOURCE_ROOT; };
+		A7F92FDC260925B9006BBDD7 /* patchfinder64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = patchfinder64.c; path = Athenus/patchfinder64.c; sourceTree = SOURCE_ROOT; };
+		A7F92FDD260925B9006BBDD7 /* patchfinder64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = patchfinder64.h; path = Athenus/patchfinder64.h; sourceTree = SOURCE_ROOT; };
+		A7F92FDE260925B9006BBDD7 /* pte_stuff_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pte_stuff_64.h; path = Athenus/pte_stuff_64.h; sourceTree = SOURCE_ROOT; };
+		A7F92FDF260925B9006BBDD7 /* sbops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sbops.h; path = Athenus/sbops.h; sourceTree = SOURCE_ROOT; };
+		A7F92FE0260925B9006BBDD7 /* sock_port_exploit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sock_port_exploit.c; path = Athenus/sock_port_exploit.c; sourceTree = SOURCE_ROOT; };
+		A7F92FE1260925B9006BBDD7 /* sock_port_exploit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sock_port_exploit.h; path = Athenus/sock_port_exploit.h; sourceTree = SOURCE_ROOT; };
+		A7F92FE2260925B9006BBDD7 /* kernel_memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kernel_memory.c; path = Athenus/kernel_memory.c; sourceTree = SOURCE_ROOT; };
+		A7F92FE3260925B9006BBDD7 /* kernel_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kernel_memory.h; path = Athenus/kernel_memory.h; sourceTree = SOURCE_ROOT; };
+		A7F92FE4260925B9006BBDD7 /* kutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kutil.h; path = Athenus/kutil.h; sourceTree = SOURCE_ROOT; };
+		A7F92FE5260925B9006BBDD7 /* kutil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = kutil.m; path = Athenus/kutil.m; sourceTree = SOURCE_ROOT; };
+		A7F92FE6260925B9006BBDD7 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = Athenus/common.h; sourceTree = SOURCE_ROOT; };
+		A7F92FE7260925B9006BBDD7 /* exploit_utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = exploit_utilities.c; path = Athenus/exploit_utilities.c; sourceTree = SOURCE_ROOT; };
+		A7F92FE8260925B9006BBDD7 /* exploit_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = exploit_utilities.h; path = Athenus/exploit_utilities.h; sourceTree = SOURCE_ROOT; };
+		A7F92FE9260925B9006BBDD7 /* iosurface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = iosurface.c; path = Athenus/iosurface.c; sourceTree = SOURCE_ROOT; };
+		A7F92FEA260925B9006BBDD7 /* iosurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iosurface.h; path = Athenus/iosurface.h; sourceTree = SOURCE_ROOT; };
+		A7F92FEB260925B9006BBDD7 /* jailbreak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jailbreak.h; path = Athenus/jailbreak.h; sourceTree = SOURCE_ROOT; };
+		A7F92FEC260925B9006BBDD7 /* jailbreak.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = jailbreak.mm; path = Athenus/jailbreak.mm; sourceTree = SOURCE_ROOT; };
+		A7F930082609262C006BBDD7 /* Array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		A7F930092609262C006BBDD7 /* Boolean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Boolean.hpp; sourceTree = "<group>"; };
+		A7F9300A2609262C006BBDD7 /* Data.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Data.hpp; sourceTree = "<group>"; };
+		A7F9300B2609262C006BBDD7 /* Date.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
+		A7F9300C2609262C006BBDD7 /* Dictionary.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dictionary.hpp; sourceTree = "<group>"; };
+		A7F9300D2609262C006BBDD7 /* Integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Integer.hpp; sourceTree = "<group>"; };
+		A7F9300E2609262C006BBDD7 /* Key.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Key.hpp; sourceTree = "<group>"; };
+		A7F9300F2609262C006BBDD7 /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		A7F930102609262C006BBDD7 /* plist++.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "plist++.hpp"; sourceTree = "<group>"; };
+		A7F930112609262C006BBDD7 /* plist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plist.h; sourceTree = "<group>"; };
+		A7F930122609262C006BBDD7 /* Real.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Real.hpp; sourceTree = "<group>"; };
+		A7F930132609262C006BBDD7 /* String.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = String.hpp; sourceTree = "<group>"; };
+		A7F930142609262C006BBDD7 /* Structure.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Structure.hpp; sourceTree = "<group>"; };
+		A7F930152609262C006BBDD7 /* Uid.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Uid.hpp; sourceTree = "<group>"; };
+		A7F93028260926BD006BBDD7 /* all_liboffsetfinder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = all_liboffsetfinder.hpp; sourceTree = "<group>"; };
+		A7F93029260926BD006BBDD7 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		A7F9302A260926BD006BBDD7 /* exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exception.cpp; sourceTree = "<group>"; };
+		A7F9302B260926BD006BBDD7 /* exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exception.hpp; sourceTree = "<group>"; };
+		A7F9302C260926BD006BBDD7 /* insn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = insn.cpp; sourceTree = "<group>"; };
+		A7F9302D260926BD006BBDD7 /* insn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = insn.hpp; sourceTree = "<group>"; };
+		A7F9302E260926BD006BBDD7 /* liboffsetfinder64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = liboffsetfinder64.cpp; sourceTree = "<group>"; };
+		A7F9302F260926BD006BBDD7 /* liboffsetfinder64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = liboffsetfinder64.hpp; sourceTree = "<group>"; };
+		A7F93030260926BD006BBDD7 /* patch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = patch.cpp; sourceTree = "<group>"; };
+		A7F93031260926BD006BBDD7 /* patch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = patch.hpp; sourceTree = "<group>"; };
+		A7F9303626092978006BBDD7 /* all_img4tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = all_img4tool.h; sourceTree = "<group>"; };
+		A7F9303726092978006BBDD7 /* img4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = img4.h; sourceTree = "<group>"; };
+		A7F9303826092978006BBDD7 /* img4tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = img4tool.h; sourceTree = "<group>"; };
+		A7F9303926092978006BBDD7 /* lzssdec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lzssdec.h; sourceTree = "<group>"; };
+		A7F9303A26092AC6006BBDD7 /* img3dec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = img3dec.cpp; sourceTree = "<group>"; };
+		A7F9303B26092AC6006BBDD7 /* img3dec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = img3dec.hpp; sourceTree = "<group>"; };
+		A7F9303C26092AC6006BBDD7 /* lzssdec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lzssdec.cpp; sourceTree = "<group>"; };
+		A7F9303D26092AC6006BBDD7 /* lzssdec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lzssdec.hpp; sourceTree = "<group>"; };
+		A7F9303E26092AC6006BBDD7 /* offsetfinder32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = offsetfinder32.cpp; sourceTree = "<group>"; };
+		A7F9303F26092AC6006BBDD7 /* offsetfinder32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = offsetfinder32.hpp; sourceTree = "<group>"; };
+		A7F9304026092AC6006BBDD7 /* patchfinder32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = patchfinder32.c; sourceTree = "<group>"; };
+		A7F9304126092AC6006BBDD7 /* patchfinder32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = patchfinder32.h; sourceTree = "<group>"; };
+		A7FD252525F099D900287BBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Athenus/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		A7FD252625F099D900287BBE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Athenus/ViewController.m; sourceTree = SOURCE_ROOT; };
+		A7FD252925F099E000287BBE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Athenus/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		A7FD252A25F099E000287BBE /* untethered.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = untethered.m; path = Athenus/untethered.m; sourceTree = SOURCE_ROOT; };
+		A7FD252B25F099E000287BBE /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = Athenus/config.h; sourceTree = SOURCE_ROOT; };
+		A7FD252E25F099F300287BBE /* untethered.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = untethered.h; path = Athenus/untethered.h; sourceTree = SOURCE_ROOT; };
+		A7FD252F25F099F300287BBE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Athenus/ViewController.h; sourceTree = SOURCE_ROOT; };
+		A7FD253225F09A1F00287BBE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Athenus/main.m; sourceTree = SOURCE_ROOT; };
+		A7FD254B25F09B9200287BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Athenus/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		A7FD254D25F09B9200287BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Athenus/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		A7FD255025F09C1700287BBE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Athenus/Info.plist; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75DC305124B4CB00009152F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F92FF2260925B9006BBDD7 /* libplist.a in Frameworks */,
+				A7F92FF0260925B9006BBDD7 /* libimg4tool.a in Frameworks */,
+				A7F2C8192606777600424F26 /* IOKit.framework in Frameworks */,
+				A7F92FF1260925B9006BBDD7 /* libplist++.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC306A24B4CB01009152F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC307524B4CB01009152F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75DC304B24B4CB00009152F2 = {
+			isa = PBXGroup;
+			children = (
+				A7995D7D2608104D00FB07E7 /* libs */,
+				A7F2C8182606777600424F26 /* IOKit.framework */,
+				75DC305624B4CB00009152F2 /* Athenus */,
+				75DC305524B4CB00009152F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75DC305524B4CB00009152F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75DC305424B4CB00009152F2 /* ap0110.app */,
+				75DC306D24B4CB01009152F2 /* Athenus.xctest */,
+				75DC307824B4CB01009152F2 /* Athenus.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75DC305624B4CB00009152F2 /* Athenus */ = {
+			isa = PBXGroup;
+			children = (
+				A7F92FFC2609262C006BBDD7 /* img4tool */,
+				A7F92FFD2609262C006BBDD7 /* liboffsetfinder32 */,
+				A7F92FFE2609262C006BBDD7 /* liboffsetfinder64 */,
+				A7F930072609262C006BBDD7 /* plist */,
+				A7F92FCF260925B9006BBDD7 /* sugondesenuts.h */,
+				A7F92FD0260925B9006BBDD7 /* config.h */,
+				A7F92FD1260925B9006BBDD7 /* jbresources */,
+				A7F92FD5260925B9006BBDD7 /* libs */,
+				A7F92FD9260925B9006BBDD7 /* offsets.h */,
+				A7F92FDA260925B9006BBDD7 /* offsets.m */,
+				A7F92FDB260925B9006BBDD7 /* offsets.mm */,
+				A7F92FDC260925B9006BBDD7 /* patchfinder64.c */,
+				A7F92FDD260925B9006BBDD7 /* patchfinder64.h */,
+				A7F92FDE260925B9006BBDD7 /* pte_stuff_64.h */,
+				A7F92FDF260925B9006BBDD7 /* sbops.h */,
+				A7F92FE0260925B9006BBDD7 /* sock_port_exploit.c */,
+				A7F92FE1260925B9006BBDD7 /* sock_port_exploit.h */,
+				A7F92FE2260925B9006BBDD7 /* kernel_memory.c */,
+				A7F92FE3260925B9006BBDD7 /* kernel_memory.h */,
+				A7F92FE4260925B9006BBDD7 /* kutil.h */,
+				A7F92FE5260925B9006BBDD7 /* kutil.m */,
+				A7F92FE6260925B9006BBDD7 /* common.h */,
+				A7F92FE7260925B9006BBDD7 /* exploit_utilities.c */,
+				A7F92FE8260925B9006BBDD7 /* exploit_utilities.h */,
+				A7F92FE9260925B9006BBDD7 /* iosurface.c */,
+				A7F92FEA260925B9006BBDD7 /* iosurface.h */,
+				A7F92FEB260925B9006BBDD7 /* jailbreak.h */,
+				A7F92FEC260925B9006BBDD7 /* jailbreak.mm */,
+				A7995D3F2607D95200FB07E7 /* images */,
+				A7FD252525F099D900287BBE /* Assets.xcassets */,
+				A7FD252625F099D900287BBE /* ViewController.m */,
+				A7FD252925F099E000287BBE /* AppDelegate.m */,
+				A7FD252A25F099E000287BBE /* untethered.m */,
+				A7FD252B25F099E000287BBE /* config.h */,
+				A7FD252E25F099F300287BBE /* untethered.h */,
+				A7FD252F25F099F300287BBE /* ViewController.h */,
+				A7FD254A25F09B9200287BBE /* LaunchScreen.storyboard */,
+				A7FD254C25F09B9200287BBE /* Main.storyboard */,
+				A7FD255025F09C1700287BBE /* Info.plist */,
+				75DC305724B4CB00009152F2 /* Supporting Files */,
+			);
+			name = Athenus;
+			path = genesys;
+			sourceTree = "<group>";
+		};
+		75DC305724B4CB00009152F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7FD253225F09A1F00287BBE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7995D3F2607D95200FB07E7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A7995D362607BEC000FB07E7 /* Ap0110-1024.png */,
+				A7995D382607C19C00FB07E7 /* fuckyou.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		A7995D7D2608104D00FB07E7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				A7995D7E2608104D00FB07E7 /* libimg4tool.a */,
+				A7995D812608104D00FB07E7 /* libplist++.a */,
+				A7995D822608104D00FB07E7 /* libplist.a */,
+			);
+			name = libs;
+			path = Athenus/libs;
+			sourceTree = "<group>";
+		};
+		A7F92FD1260925B9006BBDD7 /* jbresources */ = {
+			isa = PBXGroup;
+			children = (
+				A7F92FD2260925B9006BBDD7 /* Cydia-10.tar */,
+				A7F92FD3260925B9006BBDD7 /* launchctl */,
+				A7F92FD4260925B9006BBDD7 /* tar */,
+			);
+			name = jbresources;
+			path = Athenus/jbresources;
+			sourceTree = SOURCE_ROOT;
+		};
+		A7F92FD5260925B9006BBDD7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				A7F92FD6260925B9006BBDD7 /* libimg4tool.a */,
+				A7F92FD7260925B9006BBDD7 /* libplist++.a */,
+				A7F92FD8260925B9006BBDD7 /* libplist.a */,
+			);
+			name = libs;
+			path = Athenus/libs;
+			sourceTree = SOURCE_ROOT;
+		};
+		A7F92FFC2609262C006BBDD7 /* img4tool */ = {
+			isa = PBXGroup;
+			children = (
+				A7F9303626092978006BBDD7 /* all_img4tool.h */,
+				A7F9303726092978006BBDD7 /* img4.h */,
+				A7F9303826092978006BBDD7 /* img4tool.h */,
+				A7F9303926092978006BBDD7 /* lzssdec.h */,
+			);
+			path = img4tool;
+			sourceTree = SOURCE_ROOT;
+		};
+		A7F92FFD2609262C006BBDD7 /* liboffsetfinder32 */ = {
+			isa = PBXGroup;
+			children = (
+				A7F9303A26092AC6006BBDD7 /* img3dec.cpp */,
+				A7F9303B26092AC6006BBDD7 /* img3dec.hpp */,
+				A7F9303C26092AC6006BBDD7 /* lzssdec.cpp */,
+				A7F9303D26092AC6006BBDD7 /* lzssdec.hpp */,
+				A7F9303E26092AC6006BBDD7 /* offsetfinder32.cpp */,
+				A7F9303F26092AC6006BBDD7 /* offsetfinder32.hpp */,
+				A7F9304026092AC6006BBDD7 /* patchfinder32.c */,
+				A7F9304126092AC6006BBDD7 /* patchfinder32.h */,
+			);
+			path = liboffsetfinder32;
+			sourceTree = SOURCE_ROOT;
+		};
+		A7F92FFE2609262C006BBDD7 /* liboffsetfinder64 */ = {
+			isa = PBXGroup;
+			children = (
+				A7F93028260926BD006BBDD7 /* all_liboffsetfinder.hpp */,
+				A7F93029260926BD006BBDD7 /* common.h */,
+				A7F9302A260926BD006BBDD7 /* exception.cpp */,
+				A7F9302B260926BD006BBDD7 /* exception.hpp */,
+				A7F9302C260926BD006BBDD7 /* insn.cpp */,
+				A7F9302D260926BD006BBDD7 /* insn.hpp */,
+				A7F9302E260926BD006BBDD7 /* liboffsetfinder64.cpp */,
+				A7F9302F260926BD006BBDD7 /* liboffsetfinder64.hpp */,
+				A7F93030260926BD006BBDD7 /* patch.cpp */,
+				A7F93031260926BD006BBDD7 /* patch.hpp */,
+			);
+			path = liboffsetfinder64;
+			sourceTree = SOURCE_ROOT;
+		};
+		A7F930072609262C006BBDD7 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				A7F930082609262C006BBDD7 /* Array.hpp */,
+				A7F930092609262C006BBDD7 /* Boolean.hpp */,
+				A7F9300A2609262C006BBDD7 /* Data.hpp */,
+				A7F9300B2609262C006BBDD7 /* Date.hpp */,
+				A7F9300C2609262C006BBDD7 /* Dictionary.hpp */,
+				A7F9300D2609262C006BBDD7 /* Integer.hpp */,
+				A7F9300E2609262C006BBDD7 /* Key.hpp */,
+				A7F9300F2609262C006BBDD7 /* Node.hpp */,
+				A7F930102609262C006BBDD7 /* plist++.hpp */,
+				A7F930112609262C006BBDD7 /* plist.h */,
+				A7F930122609262C006BBDD7 /* Real.hpp */,
+				A7F930132609262C006BBDD7 /* String.hpp */,
+				A7F930142609262C006BBDD7 /* Structure.hpp */,
+				A7F930152609262C006BBDD7 /* Uid.hpp */,
+			);
+			path = plist;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75DC305324B4CB00009152F2 /* Athenus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DC308124B4CB01009152F2 /* Build configuration list for PBXNativeTarget "Athenus" */;
+			buildPhases = (
+				75DC305024B4CB00009152F2 /* Sources */,
+				75DC305124B4CB00009152F2 /* Frameworks */,
+				75DC305224B4CB00009152F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Athenus;
+			productName = genesys;
+			productReference = 75DC305424B4CB00009152F2 /* ap0110.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75DC306C24B4CB01009152F2 /* AthenusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DC308424B4CB01009152F2 /* Build configuration list for PBXNativeTarget "AthenusTests" */;
+			buildPhases = (
+				75DC306924B4CB01009152F2 /* Sources */,
+				75DC306A24B4CB01009152F2 /* Frameworks */,
+				75DC306B24B4CB01009152F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DC306F24B4CB01009152F2 /* PBXTargetDependency */,
+			);
+			name = AthenusTests;
+			productName = genesysTests;
+			productReference = 75DC306D24B4CB01009152F2 /* Athenus.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75DC307724B4CB01009152F2 /* AthenusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DC308724B4CB01009152F2 /* Build configuration list for PBXNativeTarget "AthenusUITests" */;
+			buildPhases = (
+				75DC307424B4CB01009152F2 /* Sources */,
+				75DC307524B4CB01009152F2 /* Frameworks */,
+				75DC307624B4CB01009152F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DC307A24B4CB01009152F2 /* PBXTargetDependency */,
+			);
+			name = AthenusUITests;
+			productName = genesysUITests;
+			productReference = 75DC307824B4CB01009152F2 /* Athenus.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75DC304C24B4CB00009152F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = yeet;
+				TargetAttributes = {
+					75DC305324B4CB00009152F2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 75UPKA96FS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					75DC306C24B4CB01009152F2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 75DC305324B4CB00009152F2;
+					};
+					75DC307724B4CB01009152F2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 75DC305324B4CB00009152F2;
+					};
+				};
+			};
+			buildConfigurationList = 75DC304F24B4CB00009152F2 /* Build configuration list for PBXProject "Athenus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75DC304B24B4CB00009152F2;
+			productRefGroup = 75DC305524B4CB00009152F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75DC305324B4CB00009152F2 /* Athenus */,
+				75DC306C24B4CB01009152F2 /* AthenusTests */,
+				75DC307724B4CB01009152F2 /* AthenusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75DC305224B4CB00009152F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FD254F25F09B9200287BBE /* Main.storyboard in Resources */,
+				A7F92FEE260925B9006BBDD7 /* launchctl in Resources */,
+				A7F92FEF260925B9006BBDD7 /* tar in Resources */,
+				A7F92FED260925B9006BBDD7 /* Cydia-10.tar in Resources */,
+				A7995D392607C19C00FB07E7 /* fuckyou.png in Resources */,
+				A7FD254E25F09B9200287BBE /* LaunchScreen.storyboard in Resources */,
+				A7FD252725F099D900287BBE /* Assets.xcassets in Resources */,
+				A7995D372607BEC000FB07E7 /* Ap0110-1024.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC306B24B4CB01009152F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC307624B4CB01009152F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75DC305024B4CB00009152F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F9304326092AC6006BBDD7 /* lzssdec.cpp in Sources */,
+				A7F92FF4260925B9006BBDD7 /* offsets.mm in Sources */,
+				A7F92FFA260925B9006BBDD7 /* iosurface.c in Sources */,
+				A7F9304426092AC6006BBDD7 /* offsetfinder32.cpp in Sources */,
+				A7F93035260926BD006BBDD7 /* patch.cpp in Sources */,
+				A7F92FF3260925B9006BBDD7 /* offsets.m in Sources */,
+				A7F9304226092AC6006BBDD7 /* img3dec.cpp in Sources */,
+				A7F93032260926BD006BBDD7 /* exception.cpp in Sources */,
+				A7F92FF5260925B9006BBDD7 /* patchfinder64.c in Sources */,
+				A7FD252C25F099E000287BBE /* AppDelegate.m in Sources */,
+				A7F93034260926BD006BBDD7 /* liboffsetfinder64.cpp in Sources */,
+				A7F92FF6260925B9006BBDD7 /* sock_port_exploit.c in Sources */,
+				A7FD252D25F099E000287BBE /* untethered.m in Sources */,
+				A7F9304526092AC6006BBDD7 /* patchfinder32.c in Sources */,
+				A7F93033260926BD006BBDD7 /* insn.cpp in Sources */,
+				A7FD253325F09A1F00287BBE /* main.m in Sources */,
+				A7FD252825F099D900287BBE /* ViewController.m in Sources */,
+				A7F92FF9260925B9006BBDD7 /* exploit_utilities.c in Sources */,
+				A7F92FF7260925B9006BBDD7 /* kernel_memory.c in Sources */,
+				A7F92FFB260925B9006BBDD7 /* jailbreak.mm in Sources */,
+				A7F92FF8260925B9006BBDD7 /* kutil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC306924B4CB01009152F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC307424B4CB01009152F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75DC306F24B4CB01009152F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75DC305324B4CB00009152F2 /* Athenus */;
+			targetProxy = 75DC306E24B4CB01009152F2 /* PBXContainerItemProxy */;
+		};
+		75DC307A24B4CB01009152F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75DC305324B4CB00009152F2 /* Athenus */;
+			targetProxy = 75DC307924B4CB01009152F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7FD254A25F09B9200287BBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7FD254B25F09B9200287BBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A7FD254C25F09B9200287BBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7FD254D25F09B9200287BBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75DC307F24B4CB01009152F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75DC308024B4CB01009152F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75DC308224B4CB01009152F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "$(SRCROOT)/Athenus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Athenus/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = w212.genesys420;
+				PRODUCT_NAME = ap0110;
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		75DC308324B4CB01009152F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "$(SRCROOT)/Athenus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Athenus/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = w212.genesys420;
+				PRODUCT_NAME = ap0110;
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+		75DC308524B4CB01009152F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = genesysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yeet.genesysTests;
+				PRODUCT_NAME = Athenus;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Athenus.app/Athenus";
+			};
+			name = Debug;
+		};
+		75DC308624B4CB01009152F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = genesysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yeet.genesysTests;
+				PRODUCT_NAME = Athenus;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Athenus.app/Athenus";
+			};
+			name = Release;
+		};
+		75DC308824B4CB01009152F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = genesysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yeet.genesysUITests;
+				PRODUCT_NAME = Athenus;
+				TEST_TARGET_NAME = genesys;
+			};
+			name = Debug;
+		};
+		75DC308924B4CB01009152F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = genesysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yeet.genesysUITests;
+				PRODUCT_NAME = Athenus;
+				TEST_TARGET_NAME = genesys;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75DC304F24B4CB00009152F2 /* Build configuration list for PBXProject "Athenus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC307F24B4CB01009152F2 /* Debug */,
+				75DC308024B4CB01009152F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DC308124B4CB01009152F2 /* Build configuration list for PBXNativeTarget "Athenus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC308224B4CB01009152F2 /* Debug */,
+				75DC308324B4CB01009152F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DC308424B4CB01009152F2 /* Build configuration list for PBXNativeTarget "AthenusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC308524B4CB01009152F2 /* Debug */,
+				75DC308624B4CB01009152F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DC308724B4CB01009152F2 /* Build configuration list for PBXNativeTarget "AthenusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC308824B4CB01009152F2 /* Debug */,
+				75DC308924B4CB01009152F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75DC304C24B4CB00009152F2 /* Project object */;
+}
