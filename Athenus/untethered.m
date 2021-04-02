@@ -60,6 +60,7 @@ int fun(int argc, char* argv[]) {
             
             backgroundTaskIdentifier = UIBackgroundTaskInvalid;
         }];
+        printf("[*] jailbreaking...\n");
         jelbrekme();
     });
     return 0;
