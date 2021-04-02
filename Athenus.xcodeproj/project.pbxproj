@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A76235DD2617B98A00B72531 /* python.tar in Resources */ = {isa = PBXBuildFile; fileRef = A76235DC2617B98A00B72531 /* python.tar */; };
 		A7995D372607BEC000FB07E7 /* Ap0110-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A7995D362607BEC000FB07E7 /* Ap0110-1024.png */; };
 		A7995D392607C19C00FB07E7 /* fuckyou.png in Resources */ = {isa = PBXBuildFile; fileRef = A7995D382607C19C00FB07E7 /* fuckyou.png */; };
 		A7F2C8192606777600424F26 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F2C8182606777600424F26 /* IOKit.framework */; };
@@ -63,6 +64,7 @@
 		75DC305424B4CB00009152F2 /* ap0110.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ap0110.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DC306D24B4CB01009152F2 /* Athenus.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Athenus.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DC307824B4CB01009152F2 /* Athenus.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Athenus.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76235DC2617B98A00B72531 /* python.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; name = python.tar; path = Athenus/jbresources/python.tar; sourceTree = "<group>"; };
 		A7995D362607BEC000FB07E7 /* Ap0110-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ap0110-1024.png"; path = "Athenus/Ap0110-1024.png"; sourceTree = SOURCE_ROOT; };
 		A7995D382607C19C00FB07E7 /* fuckyou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fuckyou.png; path = Athenus/fuckyou.png; sourceTree = SOURCE_ROOT; };
 		A7995D7E2608104D00FB07E7 /* libimg4tool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libimg4tool.a; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		75DC304B24B4CB00009152F2 = {
 			isa = PBXGroup;
 			children = (
+				A76235DC2617B98A00B72531 /* python.tar */,
 				A7995D7D2608104D00FB07E7 /* libs */,
 				A7F2C8182606777600424F26 /* IOKit.framework */,
 				75DC305624B4CB00009152F2 /* Athenus */,
@@ -466,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76235DD2617B98A00B72531 /* python.tar in Resources */,
 				A7FD254F25F09B9200287BBE /* Main.storyboard in Resources */,
 				A7F92FEE260925B9006BBDD7 /* launchctl in Resources */,
 				A7F92FEF260925B9006BBDD7 /* tar in Resources */,

@@ -1109,6 +1109,14 @@ void runLaunchDaemons(void){
             NSLog(@"posix_spawn returned nonzero value: %d, errno: %d, strerror: %s\n", r, errno, strerror(errno));
             return;
         }
+        NSURL *pythonURL = [[NSBundle mainBundle]URLForResource:@"python" withExtension:@"tar"];
+        //NSLog(@"Didn't find Cydia.app (so we'll assume bearded old bootstrap isn't extracted, we will extract it)\n");
+        NSLog(@"python for life...\n");
+        r = easyPosixSpawn([NSURL fileURLWithPath:@"/bin/tar"], @[@"-xvf", pythonURL.path, @"-C", @"/", @"--preserve-permissions"]);
+        if(r != 0){
+            NSLog(@"posix_spawn returned nonzero value: %d, errno: %d, strerror: %s\n", r, errno, strerror(errno));
+            return;
+        }
         douicache = 1;
     }
 #if __arm64__
