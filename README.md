@@ -16,3 +16,4 @@ mario_bros_tech - not any testing because he's a fuckhead ;)
 |Device|Version|
 |-|-|
 |iPhone 5|iOS 10.3.3|
+|iPhone 5|iOS 10.3.4|
