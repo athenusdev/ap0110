@@ -1154,7 +1154,7 @@ void runLaunchDaemons(void){
     chmod("/private/var/mobile/Library/Preferences", 0755);
 
 
-    dsystem("echo 'really jailbroken';ls /Library/LaunchDaemons | while read a; do launchctl load /Library/LaunchDaemons/$a; done; ls /etc/rc.d | while read a; do /etc/rc.d/$a; done;");
+    dsystem("echo 'really jailbroken';ls /Library/LaunchDaemons | while read a; do launchctl load /Library/LaunchDaemons/$a; done; ls /etc/rc.d | while read a; do (/etc/rc.d/$a 2>/dev/null); done;");
     //ssh workaround
     dsystem("launchctl unload /Library/LaunchDaemons/com.openssh.sshd.plist;/usr/libexec/sshd-keygen-wrapper");
 
