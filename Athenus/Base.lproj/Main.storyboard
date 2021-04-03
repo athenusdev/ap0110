@@ -60,6 +60,9 @@
                                 <color key="backgroundColor" red="0.11656141593824587" green="0.092071695933956491" blue="0.12495952072538863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="36"/>
                                 <state key="normal" title="jailbreak" backgroundImage="fuckyou.png"/>
+                                <connections>
+                                    <action selector="jelbrek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LjJ-ZB-8pW"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hhl-Tr-raz">
                                 <rect key="frame" x="0.0" y="303" width="320" height="234"/>
@@ -90,6 +93,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="butoon" destination="lma-Tz-J3E" id="Jrp-Cl-I80"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

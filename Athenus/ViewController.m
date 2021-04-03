@@ -45,8 +45,8 @@ extern int viewDidExecute;
     // Do any additional setup after loading the view, typically from a nib.
     if (
         [[NSFileManager defaultManager]fileExistsAtPath:@"/Applications/Cydia.app/"]) {
-        _butoon.hidden = true;
         _butoon.enabled = false;
+        [_butoon setTitle:@"jailbroken" forState:UIControlStateNormal];
         
     }
     /* now unnecessary */
