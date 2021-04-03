@@ -28,7 +28,7 @@ int (*dsystem)(const char *) = 0;
 
 void jelbrekme() {
     dispatch_async(jailbreak_queue , ^{
-        sleep(2);
+        //sleep(2);
         if (viewDidExecute)
             return;
         struct utsname name;
