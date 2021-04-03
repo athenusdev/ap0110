@@ -51,7 +51,7 @@ extern int viewDidExecute;
     }
     /* now unnecessary */
     //[[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
-    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    //[[UIApplication sharedApplication] registerForRemoteNotifications];
     NSLog(@"viewDidLoad executed");
     //viewDidExecute = 1;
 }
