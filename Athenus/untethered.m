@@ -27,17 +27,10 @@
 int (*dsystem)(const char *) = 0;
 
 void jelbrekme() {
-    dispatch_async(jailbreak_queue , ^{
-        //sleep(2);
-        if (viewDidExecute)
-            return;
-        struct utsname name;
-        uname(&name);
-        if (!strstr(name.version, "MarijuanARM")){
-            usleep(USEC_PER_SEC/100);
-            jailbreak();
-        }
-    });
+        printf(lol);
+        jailbreak();
+        
+    );
 }
 
 int fun(int argc, char* argv[]) {
