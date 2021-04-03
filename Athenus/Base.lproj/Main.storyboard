@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
@@ -16,12 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ap0110-1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-8W-ILm">
-                                <rect key="frame" x="0.0" y="253" width="320" height="315"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ap0110-1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-8W-ILm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcy-Ly-9Cz">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcy-Ly-9Cz">
                                 <rect key="frame" x="0.0" y="20" width="320" height="116"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="6jy-Ch-bzG"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="ap0110">
                                         <attributes>
@@ -31,7 +35,7 @@
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  autoexecuting jailbreak for iOS 10.x (32-bit) only devices with headphone jack">
+                                    <fragment content="  autoexecuting jailbreak for iOS 10.x (32 &amp; 64 bit) only devices with headphone jack">
                                         <attributes>
                                             <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="NSColor" red="0.98958333333333337" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,19 +46,22 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-cd-Mko">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-cd-Mko">
                                 <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="90k-dz-8SZ"/>
+                                </constraints>
                                 <state key="normal" title="secret">
                                     <color key="titleColor" red="0.013381375353029015" green="0.011764705882352941" blue="0.013449997790736856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lma-Tz-J3E">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lma-Tz-J3E">
                                 <rect key="frame" x="53" y="233" width="214" height="62"/>
                                 <color key="backgroundColor" red="0.11656141593824587" green="0.092071695933956491" blue="0.12495952072538863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="36"/>
                                 <state key="normal" title="jailbreak" backgroundImage="fuckyou.png"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hhl-Tr-raz">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hhl-Tr-raz">
                                 <rect key="frame" x="0.0" y="303" width="320" height="234"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">special thanks to @SongXiaoXi - sockh3lix @tihmstar and co - h3lix @jakeashacks - sock_port exploit  nuclearized features: async_expiration voip_load   - with love from the athenus dev team &lt;3</string>
@@ -64,6 +71,23 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="0Xk-4N-sYo"/>
+                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="leading" secondItem="rcy-Ly-9Cz" secondAttribute="leading" id="4NY-nQ-J9X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hhl-Tr-raz" secondAttribute="bottom" constant="31" id="6EG-6t-2aK"/>
+                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="trailing" secondItem="rcy-Ly-9Cz" secondAttribute="trailing" id="6Xx-6y-McG"/>
+                            <constraint firstItem="lgG-cd-Mko" firstAttribute="leading" secondItem="rcy-Ly-9Cz" secondAttribute="leading" id="Ga4-dK-tgi"/>
+                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hlj-db-oBo"/>
+                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="top" secondItem="lgG-cd-Mko" secondAttribute="top" id="LCK-Lj-iqN"/>
+                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YII-Lf-NNn"/>
+                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="leading" secondItem="hhl-Tr-raz" secondAttribute="leading" id="YiP-Zw-zBV"/>
+                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="centerX" secondItem="lma-Tz-J3E" secondAttribute="centerX" id="j3b-ub-0Iv"/>
+                            <constraint firstAttribute="trailing" secondItem="ZhO-8W-ILm" secondAttribute="trailing" id="nEp-La-YEZ"/>
+                            <constraint firstItem="hhl-Tr-raz" firstAttribute="top" secondItem="lma-Tz-J3E" secondAttribute="bottom" constant="8" symbolic="YES" id="nss-8S-Ypt"/>
+                            <constraint firstItem="lma-Tz-J3E" firstAttribute="top" secondItem="rcy-Ly-9Cz" secondAttribute="bottom" constant="97" id="o8X-Ei-fLc"/>
+                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pIQ-Da-IkK"/>
+                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="trailing" secondItem="hhl-Tr-raz" secondAttribute="trailing" id="udg-z9-FEf"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -73,7 +97,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Ap0110-1024.png" width="1024" height="1024"/>
+        <image name="Ap0110-1024.png" width="1024" height="1820"/>
         <image name="fuckyou.png" width="214" height="62"/>
     </resources>
 </document>
