@@ -60,12 +60,12 @@ int fun(int argc, char* argv[]) {
             
             backgroundTaskIdentifier = UIBackgroundTaskInvalid;
         }];
-        if ([[NSFileManager defaultManager]fileExistsAtPath:@"/Applications/Cydia.app/"]) {
+        if ([[NSFileManager defaultManager]fileExistsAtPath:@"/Applications/Cydia.app/"] && [[NSUserDefaults standardUserDefaults] boolForKey:@"jailbreakEnabled"]) {
             printf("[*] jailbreaking...\n");
             jelbrekme();
         }
         else {
-            printf("[*] waiting for user interaction because not already jailbroken");
+            printf("[*] not jailbreaking...");
         }
     });
     return 0;

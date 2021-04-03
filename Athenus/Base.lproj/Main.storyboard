@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,14 +23,14 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcy-Ly-9Cz">
                                 <rect key="frame" x="0.0" y="20" width="320" height="116"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="116" id="6jy-Ch-bzG"/>
+                                    <constraint firstAttribute="height" constant="116" id="wwP-H6-skq"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="ap0110">
                                         <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="NSColor" red="0.98958333333333337" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="36" name="CourierNewPS-BoldMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -37,7 +38,7 @@
                                     </fragment>
                                     <fragment content="  autoexecuting jailbreak for iOS 10.x (32 &amp; 64 bit) only devices with headphone jack">
                                         <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="NSColor" red="0.98958333333333337" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="CourierNewPSMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -49,20 +50,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-cd-Mko">
                                 <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="74" id="90k-dz-8SZ"/>
+                                    <constraint firstAttribute="width" constant="74" id="Sg9-u5-187"/>
                                 </constraints>
                                 <state key="normal" title="secret">
                                     <color key="titleColor" red="0.013381375353029015" green="0.011764705882352941" blue="0.013449997790736856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lma-Tz-J3E">
-                                <rect key="frame" x="53" y="233" width="214" height="62"/>
-                                <color key="backgroundColor" red="0.11656141593824587" green="0.092071695933956491" blue="0.12495952072538863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="36"/>
-                                <state key="normal" title="jailbreak" backgroundImage="fuckyou.png"/>
-                                <connections>
-                                    <action selector="jelbrek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LjJ-ZB-8pW"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hhl-Tr-raz">
                                 <rect key="frame" x="0.0" y="303" width="320" height="234"/>
@@ -72,29 +64,89 @@
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enable tweaks" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmh-yz-wYi">
+                                <rect key="frame" x="52" y="214" width="167" height="21"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4NT-8i-u9S">
+                                <rect key="frame" x="227" y="209" width="51" height="31"/>
+                            </switch>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="launch daemons" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAq-54-yLv">
+                                <rect key="frame" x="20" y="175" width="199" height="21"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00A-Jh-z2J">
+                                <rect key="frame" x="227" y="170" width="51" height="31"/>
+                            </switch>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jailbreak" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmh-lk-05u">
+                                <rect key="frame" x="52" y="253" width="167" height="21"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yxc-Yr-ukq">
+                                <rect key="frame" x="227" y="248" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lma-Tz-J3E">
+                                <rect key="frame" x="53" y="233" width="214" height="62"/>
+                                <color key="backgroundColor" red="0.11656141593824587" green="0.092071695933956491" blue="0.12495952072538863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="36"/>
+                                <state key="normal" title="jailbreak" backgroundImage="fuckyou.png"/>
+                                <connections>
+                                    <action selector="jelbrek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LjJ-ZB-8pW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="0Xk-4N-sYo"/>
-                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="leading" secondItem="rcy-Ly-9Cz" secondAttribute="leading" id="4NY-nQ-J9X"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hhl-Tr-raz" secondAttribute="bottom" constant="31" id="6EG-6t-2aK"/>
-                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="trailing" secondItem="rcy-Ly-9Cz" secondAttribute="trailing" id="6Xx-6y-McG"/>
-                            <constraint firstItem="lgG-cd-Mko" firstAttribute="leading" secondItem="rcy-Ly-9Cz" secondAttribute="leading" id="Ga4-dK-tgi"/>
-                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hlj-db-oBo"/>
-                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="top" secondItem="lgG-cd-Mko" secondAttribute="top" id="LCK-Lj-iqN"/>
-                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YII-Lf-NNn"/>
-                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="leading" secondItem="hhl-Tr-raz" secondAttribute="leading" id="YiP-Zw-zBV"/>
-                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="centerX" secondItem="lma-Tz-J3E" secondAttribute="centerX" id="j3b-ub-0Iv"/>
-                            <constraint firstAttribute="trailing" secondItem="ZhO-8W-ILm" secondAttribute="trailing" id="nEp-La-YEZ"/>
-                            <constraint firstItem="hhl-Tr-raz" firstAttribute="top" secondItem="lma-Tz-J3E" secondAttribute="bottom" constant="8" symbolic="YES" id="nss-8S-Ypt"/>
-                            <constraint firstItem="lma-Tz-J3E" firstAttribute="top" secondItem="rcy-Ly-9Cz" secondAttribute="bottom" constant="97" id="o8X-Ei-fLc"/>
-                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pIQ-Da-IkK"/>
-                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="trailing" secondItem="hhl-Tr-raz" secondAttribute="trailing" id="udg-z9-FEf"/>
+                            <constraint firstItem="lma-Tz-J3E" firstAttribute="centerY" secondItem="Yxc-Yr-ukq" secondAttribute="centerY" id="1Pf-T5-Qam"/>
+                            <constraint firstItem="Cmh-yz-wYi" firstAttribute="top" secondItem="MAq-54-yLv" secondAttribute="bottom" constant="18" id="83M-Dz-wgO"/>
+                            <constraint firstItem="00A-Jh-z2J" firstAttribute="leading" secondItem="MAq-54-yLv" secondAttribute="trailing" constant="8" symbolic="YES" id="8ln-b6-eKX"/>
+                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="trailing" secondItem="hhl-Tr-raz" secondAttribute="trailing" id="9Vq-fE-8Hp"/>
+                            <constraint firstItem="Bmh-lk-05u" firstAttribute="top" secondItem="Cmh-yz-wYi" secondAttribute="bottom" constant="18" id="9ge-N9-mJJ"/>
+                            <constraint firstItem="lgG-cd-Mko" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9sR-Ew-3BZ"/>
+                            <constraint firstItem="Yxc-Yr-ukq" firstAttribute="top" secondItem="4NT-8i-u9S" secondAttribute="bottom" constant="8" symbolic="YES" id="9y5-ld-rPl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hhl-Tr-raz" secondAttribute="bottom" constant="31" id="BtG-I4-OHR"/>
+                            <constraint firstItem="Cmh-yz-wYi" firstAttribute="centerY" secondItem="4NT-8i-u9S" secondAttribute="centerY" id="CI5-0B-dfE"/>
+                            <constraint firstItem="lgG-cd-Mko" firstAttribute="leading" secondItem="rcy-Ly-9Cz" secondAttribute="leading" id="CfX-IS-BAS"/>
+                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="leading" secondItem="rcy-Ly-9Cz" secondAttribute="leading" id="Iey-TN-vxu"/>
+                            <constraint firstItem="Yxc-Yr-ukq" firstAttribute="leading" secondItem="Bmh-lk-05u" secondAttribute="trailing" constant="8" symbolic="YES" id="KbA-TF-6eT"/>
+                            <constraint firstItem="4NT-8i-u9S" firstAttribute="leading" secondItem="Cmh-yz-wYi" secondAttribute="trailing" constant="8" symbolic="YES" id="LtG-mF-2wD"/>
+                            <constraint firstItem="lgG-cd-Mko" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MtK-ZK-EuF"/>
+                            <constraint firstItem="Bmh-lk-05u" firstAttribute="centerY" secondItem="lma-Tz-J3E" secondAttribute="centerY" id="N7E-yk-7gI"/>
+                            <constraint firstItem="Cmh-yz-wYi" firstAttribute="leading" secondItem="Bmh-lk-05u" secondAttribute="leading" id="NcV-Vs-d2D"/>
+                            <constraint firstItem="MAq-54-yLv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="NgZ-Gb-4PG"/>
+                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="leading" secondItem="hhl-Tr-raz" secondAttribute="leading" id="Oig-qr-pGK"/>
+                            <constraint firstItem="hhl-Tr-raz" firstAttribute="top" secondItem="lma-Tz-J3E" secondAttribute="bottom" constant="8" symbolic="YES" id="P9R-0h-ZOg"/>
+                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="centerX" secondItem="lma-Tz-J3E" secondAttribute="centerX" id="PS4-ER-W3G"/>
+                            <constraint firstItem="4NT-8i-u9S" firstAttribute="leading" secondItem="Yxc-Yr-ukq" secondAttribute="leading" id="PgZ-sw-ye0"/>
+                            <constraint firstItem="MAq-54-yLv" firstAttribute="centerY" secondItem="00A-Jh-z2J" secondAttribute="centerY" id="PjR-nN-9n0"/>
+                            <constraint firstItem="00A-Jh-z2J" firstAttribute="leading" secondItem="4NT-8i-u9S" secondAttribute="leading" id="TCi-1X-Tvf"/>
+                            <constraint firstItem="lgG-cd-Mko" firstAttribute="top" secondItem="ZhO-8W-ILm" secondAttribute="top" id="XpT-bQ-XDm"/>
+                            <constraint firstItem="rcy-Ly-9Cz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YRf-9Q-2Bf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="00A-Jh-z2J" secondAttribute="trailing" constant="28" id="aLk-N3-2YC"/>
+                            <constraint firstItem="Cmh-yz-wYi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="aMS-vc-EBe"/>
+                            <constraint firstItem="hhl-Tr-raz" firstAttribute="top" secondItem="Bmh-lk-05u" secondAttribute="bottom" constant="29" id="ai3-OZ-Z4o"/>
+                            <constraint firstItem="4NT-8i-u9S" firstAttribute="top" secondItem="00A-Jh-z2J" secondAttribute="bottom" constant="8" symbolic="YES" id="dij-BP-B1h"/>
+                            <constraint firstAttribute="trailing" secondItem="ZhO-8W-ILm" secondAttribute="trailing" id="eQO-au-t4V"/>
+                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="mpT-jB-Qbu"/>
+                            <constraint firstItem="ZhO-8W-ILm" firstAttribute="trailing" secondItem="rcy-Ly-9Cz" secondAttribute="trailing" id="vMb-gr-vRA"/>
+                            <constraint firstItem="00A-Jh-z2J" firstAttribute="top" secondItem="rcy-Ly-9Cz" secondAttribute="bottom" constant="34" id="vyi-Nx-7Vp"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="butoon" destination="lma-Tz-J3E" id="Jrp-Cl-I80"/>
+                        <outlet property="jailbreaklabel" destination="Bmh-lk-05u" id="1Hg-dL-4fb"/>
+                        <outlet property="jailbreakswitch" destination="Yxc-Yr-ukq" id="tf5-jj-lUJ"/>
+                        <outlet property="sshlabel" destination="MAq-54-yLv" id="k0Q-d2-4GG"/>
+                        <outlet property="sshswitch" destination="00A-Jh-z2J" id="Cec-TO-zYC"/>
+                        <outlet property="tweaklabel" destination="Cmh-yz-wYi" id="C9f-Ws-FwG"/>
+                        <outlet property="tweakswitch" destination="4NT-8i-u9S" id="xch-Si-fIe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

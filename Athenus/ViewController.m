@@ -22,6 +22,12 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *butoon;
+@property (weak, nonatomic) IBOutlet UISwitch *tweakswitch;
+@property (weak, nonatomic) IBOutlet UILabel *tweaklabel;
+@property (weak, nonatomic) IBOutlet UISwitch *sshswitch;
+@property (weak, nonatomic) IBOutlet UILabel *sshlabel;
+@property (weak, nonatomic) IBOutlet UISwitch *jailbreakswitch;
+@property (weak, nonatomic) IBOutlet UILabel *jailbreaklabel;
 
 @end
 
@@ -40,13 +46,52 @@ extern int viewDidExecute;
     }
 }
 
+- (void)tweakChanged:(id)sender {
+    BOOL tweaksEnabled = [sender isOn];
+    [[NSUserDefaults standardUserDefaults] setBool:tweaksEnabled forKey:@"tweaksEnabled"];
+}
+
+- (void)sshChanged:(id)sender {
+    BOOL sshEnabled = [sender isOn];
+    [[NSUserDefaults standardUserDefaults] setBool:sshEnabled forKey:@"sshEnabled"];
+}
+
+- (void)jailbreakChanged:(id)sender {
+    BOOL jailbreakEnabled = [sender isOn];
+    [[NSUserDefaults standardUserDefaults] setBool:jailbreakEnabled forKey:@"jailbreakEnabled"];
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     if (
         [[NSFileManager defaultManager]fileExistsAtPath:@"/Applications/Cydia.app/"]) {
         _butoon.enabled = false;
+        _butoon.hidden  = true;
+        
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"notfirst"]) {
+            [_tweakswitch setOn:([[NSUserDefaults standardUserDefaults] boolForKey:@"tweaksEnabled"])];
+            [_sshswitch setOn:([[NSUserDefaults standardUserDefaults] boolForKey:@"sshEnabled"])];
+            [_jailbreakswitch setOn:([[NSUserDefaults standardUserDefaults] boolForKey:@"jailbreakEnabled"])];
+        }
+         
+        
+        _tweakswitch.hidden = false;
+        _tweaklabel.hidden = false;
+        _sshswitch.hidden = false;
+        _sshlabel.hidden = false;
+        _jailbreakswitch.hidden = false;
+        _jailbreaklabel.hidden = false;
+        
+        [_tweakswitch addTarget:self action:@selector(tweakChanged:) forControlEvents:UIControlEventValueChanged];
+        [_sshswitch addTarget:self action:@selector(sshChanged:) forControlEvents:UIControlEventValueChanged];
+        [_jailbreakswitch addTarget:self action:@selector(jailbreakChanged:) forControlEvents:UIControlEventValueChanged];
+        
+        
         [_butoon setTitle:@"jailbroken" forState:UIControlStateNormal];
+        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"notfirst"];
         
     }
     /* now unnecessary */

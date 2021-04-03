@@ -10,6 +10,7 @@
 #include <stdint.h>
 #include <CoreFoundation/CoreFoundation.h>
 #include <Foundation/Foundation.h>
+#include "ViewController.h"
 
 #include <mach/mach.h>
 #include "common.h"
@@ -1153,10 +1154,15 @@ void runLaunchDaemons(void){
     chmod("/private/var/mobile/Library", 0711);
     chmod("/private/var/mobile/Library/Preferences", 0755);
 
-
-    dsystem("echo 'really jailbroken';ls /Library/LaunchDaemons | while read a; do launchctl load /Library/LaunchDaemons/$a; done; ls /etc/rc.d | while read a; do (/etc/rc.d/$a 2>/dev/null); done;");
+    dsystem("echo 'really jailbroken';");
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"tweaksEnabled"]) {
+        dsystem("ls /etc/rc.d | while read a; do (/etc/rc.d/$a 2>/dev/null); done;");
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"sshEnabled"]) {
+        dsystem("ls /Library/LaunchDaemons | while read a; do launchctl load /Library/LaunchDaemons/$a; done;");
+        dsystem("launchctl unload /Library/LaunchDaemons/com.openssh.sshd.plist;/usr/libexec/sshd-keygen-wrapper");
+    }
     //ssh workaround
-    dsystem("launchctl unload /Library/LaunchDaemons/com.openssh.sshd.plist;/usr/libexec/sshd-keygen-wrapper");
 
     sched_yield();
     if (douicache) {
