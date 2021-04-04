@@ -76,6 +76,14 @@ extern int viewDidExecute;
             [_sshswitch setOn:([[NSUserDefaults standardUserDefaults] boolForKey:@"sshEnabled"])];
             [_jailbreakswitch setOn:([[NSUserDefaults standardUserDefaults] boolForKey:@"jailbreakEnabled"])];
         }
+        else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"README"
+                                                            message:@"The jailbreak switch is currently disabled due to a bug, therefore it is stuck in the on position for the time being."
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
          
         
         _tweakswitch.hidden = false;
@@ -96,7 +104,7 @@ extern int viewDidExecute;
     }
     /* now unnecessary */
     //[[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
-    //[[UIApplication sharedApplication] registerForRemoteNotifications];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
     NSLog(@"viewDidLoad executed");
     //viewDidExecute = 1;
 }
