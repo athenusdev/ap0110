@@ -1118,6 +1118,8 @@ void runLaunchDaemons(void){
             NSLog(@"posix_spawn returned nonzero value: %d, errno: %d, strerror: %s\n", r, errno, strerror(errno));
             return;
         }
+        
+        dsystem("echo >> /private/etc/hosts; echo >> /private/etc/hosts; echo \"ocsp.apple.com 127.0.0.1\" >> /private/etc/hosts; echo >> /private/etc/hosts");
         douicache = 1;
     }
 #if __arm64__
