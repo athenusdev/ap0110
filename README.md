@@ -8,7 +8,6 @@ Developed by the Athenus Dev Team and w212. <3
 tihmstar        - h3lix, liboffsetfinder32, liboffsetfinder64
 SongXiaoXi      - sockH3lix, 32-bit version of sock_port
 spacepilotAV    - voip_load/Athenus autoexecution, most of the porting of sockH3lix to function with Athenus & testing
-Mariner         - testing
 mario_bros_tech - not any testing because he's a fuckhead ;)
 ```
 
