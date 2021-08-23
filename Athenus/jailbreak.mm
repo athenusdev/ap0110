@@ -900,6 +900,8 @@ kpp(uintptr_t kernbase, uintptr_t slide) {
     ops->mpo_mount_check_stat = 0;
     ops->mpo_proc_check_fork = 0;
     ops->mpo_iokit_check_get_property = 0;
+    ops->mpo_cred_label_update_execve = 0; // cydia /usr/lib/apt/methods/http
+    /* ^ apparently that's needed now for some reason? idk */
     
 
     postProgress(@"remapping sandbox");
